@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla";
+  /* border: 1px solid red; */
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fira Code";
+}
+
+.navbar {
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: min(98%, 1100px);
+  margin: 0 auto;
+}
+
+.nav-heading {
+  font-size: 2rem;
+}
+
+.main-product {
+  width: min(90%, 1100px);
+  margin: 0 auto;
+}
+
+.products-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 3rem;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-btn {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  z-index: 10;
+
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  background: black;
+  font-size: 1rem;
+  color: white;
+  border: 0;
+
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.3rem;
+}
+
+.product-price {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.3rem;
+}
+
+.cart {
+  position: fixed;
+  background-color: rgb(173, 173, 177);
+  top: 0;
+  right: 0;
+
+  height: 100%;
+  width: 320px;
+  padding: 2rem;
+
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 2rem;
+}
+
+.single-cart-product {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.single-cart-product > img {
+  display: block;
+  width: 80px;
+}
+
+.cart-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clear-all {
+  text-align: center;
+  font-size: 1.3rem;
+  border: 1px solid red;
+  padding-block: 5px;
+}
+
+.show-cart {
+  transform: translateX(0);
+}
+.footer {
+  margin-top: 3rem;
+  padding: 3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
